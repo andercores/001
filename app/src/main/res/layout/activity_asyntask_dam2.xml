@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".AsyntaskDam2">
 
+    <TextView
+        android:id="@+id/tvAnimacion"
+        android:layout_width="104dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Texto"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <ImageView
+        android:id="@+id/ivAnimacion"
+        android:layout_width="269dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnimacion"
+        app:layout_constraintVertical_bias="0.156"
+        app:srcCompat="@drawable/andando1" />
+
+    <ProgressBar
+        android:id="@+id/pbAnimacion"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnimacion" />
 </androidx.constraintlayout.widget.ConstraintLayout>
