@@ -15,6 +15,13 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
+        <!-- Habilitar transiciones. -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!--habilitar transiciones para contenido -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- Entrada y salida de los elementos-->
+        <item name="android:windowEnterTransition">@transition/explode_dam</item>
+        <item name="android:windowExitTransition">@transition/explode_dam</item>
     </style>
     <style name="cursoTitulo">
         <item name="android:gravity">center</item>

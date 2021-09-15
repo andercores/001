@@ -3,6 +3,8 @@ package com.example.a001;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,6 +17,11 @@ public class ListActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        //ASIGNAR TRANSICION DE ENTRADA
+        Transition desplazar = TransitionInflater.from(this).inflateTransition(R.transition.slide_dam);
+        getWindow().setEnterTransition(desplazar);
+        //FIN TRANSICION ENTRADA
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 

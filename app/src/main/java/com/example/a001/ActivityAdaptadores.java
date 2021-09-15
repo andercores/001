@@ -2,6 +2,7 @@ package com.example.a001;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,14 +41,14 @@ public class ActivityAdaptadores extends AppCompatActivity
                 startActivity(intent);
             }
         });
-
+    final ActivityAdaptadores miActividad = this;
         btnGridView.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
                 Intent intent = new Intent(getApplicationContext(), GridActivity.class);
-                startActivity(intent);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(miActividad).toBundle());
             }
         });
     }
